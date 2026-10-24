@@ -30,23 +30,7 @@ Local Web Application -> Docker Image -> Amazon ECR Repository
 8. Tagged and pushed the image to ECR.
 9. Verified the image in the AWS Console.
 
-## Build the Docker Image
-```bash
-docker build -t docker-ecr-web:v1 .
-```
 
-## Run the Application Locally
-```bash
-docker run -d --name ecr-web-test -p 8080:80 docker-ecr-web:v1
-```
 
-Open http://localhost:8080 in your browser.
-
-## AWS ECR Workflow
-Authenticate Docker to your ECR registry, tag the image
-with your registry URI, and push it to your repository.
-
-Use the official AWS ECR documentation:
-https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html
 
 
